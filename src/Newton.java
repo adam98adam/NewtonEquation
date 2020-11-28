@@ -136,6 +136,7 @@ public class Newton {
             valuef2 = valueF2XY(results.get(results.size() - 1).getX(), results.get(results.size() - 1).getY());
         } while (!((Math.abs(valuef1) + Math.abs(valuef2)) < precision));
 
+        results.remove(results.size()-1);
         printxy(results);
     }
 
